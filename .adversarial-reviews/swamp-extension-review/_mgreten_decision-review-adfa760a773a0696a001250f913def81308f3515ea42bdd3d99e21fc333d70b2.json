@@ -1,0 +1,20 @@
+{
+  "extension": "@mgreten/decision-review", "version": "2026.08.23.1", "reviewedAt": "2026-08-23T15:09:04Z",
+  "dimensions": [
+    { "id": "credentials-secrets", "verdict": "na", "note": "No credentials are accepted or persisted." },
+    { "id": "logging-quality", "verdict": "issue", "note": "prepare and validate have no structured entry or completion logging." },
+    { "id": "error-handling", "verdict": "pass", "note": "Prompt, claim, chronology, and output validation fail before writes." },
+    { "id": "testing-completeness", "verdict": "pass", "note": "Injection, claim escalation, persistence, strictness, and workspace behavior are tested." },
+    { "id": "idempotency-resilience", "verdict": "pass", "note": "Methods are deterministic persistence-only transformations." },
+    { "id": "api-contracts", "verdict": "na", "note": "Model does not invoke an external API." },
+    { "id": "resource-management", "verdict": "na", "note": "Preparation records but does not create a workspace or handle." },
+    { "id": "published-surface-hygiene", "verdict": "pass", "note": "Published examples are synthetic." },
+    { "id": "schema-strictness", "verdict": "pass", "note": "Public and persisted object contracts are strict." },
+    { "id": "lifetime-gc", "verdict": "pass", "note": "Both resources declare infinite lifetime and GC retention." },
+    { "id": "crud-completeness", "verdict": "na", "note": "Request/review pipeline, not external CRUD." },
+    { "id": "preflight-checks", "verdict": "na", "note": "No external mutation." },
+    { "id": "instance-names", "verdict": "pass", "note": "Request and validated-review names are spec-prefixed." },
+    { "id": "data-access", "verdict": "na", "note": "No stored state is read by these transformations." },
+    { "id": "version-upgrades", "verdict": "na", "note": "Initial standalone version." }
+  ]
+}
